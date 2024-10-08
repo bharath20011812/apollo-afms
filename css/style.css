@@ -679,8 +679,7 @@ footer {
   background: linear-gradient(91.29deg, #3E1A38 2.43%, #6A1A5D 46.42%, #720561 90.4%);
 
   color: white;
-  padding: 40px 20px;
-  font-family: Inter;
+  padding: 40px 20px 0;
 }
 
 .footer-container {
@@ -717,7 +716,7 @@ footer {
   color: white;
   text-decoration: none;
   transition: color 0.3s;
-  font-size: 20px;
+  font-size: 22px;
   text-transform: capitalize;
 }
 
@@ -831,6 +830,12 @@ section.case-study-section {
 .slider-casestudy .slide-case {
   position: relative;
   width: 95%;
+  border-radius: 8px;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.slide-case:hover {
+  transform: scale(1.1);
   border-radius: 8px;
 }
 
@@ -963,6 +968,7 @@ section.case-study-section {
   position: relative;
   width: 95%;
   border-radius: 8px;
+  transition: transform 0.3s ease, width 0.3s ease;
 }
 
 .slider-blog .img-conent {
@@ -1354,7 +1360,7 @@ section.case-study-section {
   }
 
   .slide-1 h2 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 
   .image-section-1 {
@@ -1391,7 +1397,7 @@ section.case-study-section {
   }
 
   section.Our-framework {
-    padding-top: 0;
+    padding: 0;
   }
 
   .slider-casestudy .img-conent {
@@ -1419,6 +1425,24 @@ section.case-study-section {
 
   .consistent-image img {
     width: 100%;
+  }
+
+  .slider-section .slide img {
+    max-width: 70%;
+    max-height: 100%;
+    display: block;
+  }
+
+  .slider-section .slider {
+    padding: 30px 0 20px;
+  }
+
+  .slider-section .slide {
+    width: 160px;
+  }
+
+  .slider-section .slide-track {
+    gap: 10px;
   }
 
   .consistent-cont p {
@@ -1493,12 +1517,13 @@ section.case-study-section {
     margin-top: 4rem;
   }
 
+  .service-mobinner {
+    padding: 15px 0;
+  }
+
 }
 
 @media screen and (max-width: 425px) {
-  .consistent-cont {
-    padding: 0;
-  }
 
   .banner-content h1 {
     font-size: 30px;
@@ -1507,10 +1532,6 @@ section.case-study-section {
   .service-mobcontent .enquire-btn {
     color: #000;
     font-size: 16px;
-  }
-
-  .location-p p {
-    font-size: 20px;
   }
 
   .counter-container {
@@ -1545,10 +1566,13 @@ section.case-study-section {
   .text-content li {
     font-size: 22px;
   }
+
+  .consistent-cont {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 320px) {
-
 
   p {
     font-size: 16px !important;
