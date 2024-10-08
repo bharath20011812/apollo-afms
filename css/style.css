@@ -1602,6 +1602,15 @@ section.case-study-section {
     font-size: 18px;
   }
 
+  .consistent-cont h2 {
+    width: 100%;
+    font-size: 30px !important;
+  }
+
+  .consistent-cont {
+    padding: 23px;
+  }
+
 }
 
 @media screen and (max-width: 425px) {
