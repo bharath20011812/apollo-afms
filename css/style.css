@@ -153,7 +153,7 @@ nav {
   font-family: Inter;
   height: 100px;
   background-color: #fff;
-  padding: 20px 5%;
+  padding: 20px 5% 20px 3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -307,7 +307,7 @@ nav .icon-burger .line {
   /* Adjust duration here */
   width: calc(250px * 14);
   /* Width for all slides */
-  gap: 50px
+  gap: 10px
 }
 
 .slide {
@@ -331,6 +331,7 @@ nav .icon-burger .line {
 .slide img {
   max-width: 100%;
   max-height: 100%;
+  width: 70%;
   display: block;
 }
 
@@ -343,15 +344,16 @@ section.consistent-section {
   display: flex;
   gap: 20px;
   padding-top: 30px;
+  align-items: center;
 }
 
 .consistent-image {
-  width: 40%;
+  width: 30%;
   text-align: center;
 }
 
 .consistent-cont {
-  width: 60%;
+  width: 70%;
   padding: 30px;
 }
 
@@ -391,7 +393,6 @@ section.counter-section {
 
 .counter {
   text-align: center;
-  padding: 0 35px;
 }
 
 .counter .number {
@@ -411,7 +412,7 @@ section.counter-section {
 
 .counter p {
   margin-top: 10px;
-  font-size: 25px;
+  font-size: 28px;
   color: #800080;
   /* Purple color */
   font-weight: 700;
@@ -545,6 +546,7 @@ section.your-trused {
   width: 100%;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .your-trused-sub {
@@ -1146,6 +1148,10 @@ section.case-study-section {
     width: 80%;
   }
 
+  .your-trused-sub h3 {
+    font-size: 22px;
+  }
+
   .consistent-cont p {
     width: 100%;
   }
@@ -1163,6 +1169,15 @@ section.case-study-section {
   .counter {
     text-align: center;
     padding: 0;
+  }
+
+  .your-trused-sub h3 {
+    font-size: 25px;
+  }
+
+  .pagination {
+    transform: translateY(75px);
+    justify-content: center;
   }
 
   .your-trused-sub {
@@ -1332,6 +1347,17 @@ section.case-study-section {
     gap: 10px;
   }
 
+
+  .slider-main-div-1 {
+    display: block;
+    height: auto;
+  }
+
+  .pagination {
+    transform: translateY(40px);
+    justify-content: center;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1423,11 +1449,6 @@ section.case-study-section {
     display: flex;
   }
 
-  .slider-main-div-1 {
-    display: block;
-    height: auto;
-  }
-
   .slide-1 h2 {
     font-size: 22px !important;
   }
@@ -1512,10 +1533,6 @@ section.case-study-section {
 
   .slider-section .slide {
     width: 160px;
-  }
-
-  .slider-section .slide-track {
-    gap: 10px;
   }
 
   .consistent-cont p {
