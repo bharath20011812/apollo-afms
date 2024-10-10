@@ -116,45 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const slider = document.querySelector('.slider-case');
-const slides = document.querySelectorAll('.slide-case');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-const paginationNumber = document.getElementById('pagination-number');
-
-let currentIndex = 0;
-const slideCount = slides.length;
-const slidesToShow = 2; // Number of slides to show at once
-
-// Function to update pagination display
-function updatePagination() {
-    const currentPage = Math.floor(currentIndex / slidesToShow) + 1; // 1-based index
-    const totalPages = Math.ceil(slideCount / slidesToShow); // Total pages
-    paginationNumber.textContent = `${currentPage}/${totalPages}`;
-}
-
-// Function to show the slides based on the current index
-function showSlides(index) {
-    currentIndex = index;
-    slider.style.transform = `translateX(${-Math.floor(currentIndex / slidesToShow) * 100}%)`; // Move slider based on index
-    updatePagination(); // Update pagination when slide changes
-}
-
-// Event listeners for manual controls
-prevBtn.addEventListener('click', () => {
-    if (currentIndex > 0) {
-        showSlides(currentIndex - slidesToShow);
-    }
-});
-
-nextBtn.addEventListener('click', () => {
-    if (currentIndex < slideCount - slidesToShow) {
-        showSlides(currentIndex + slidesToShow);
-    }
-});
-
-// Initial pagination setup
-updatePagination();
 
 
 $(function() {
@@ -198,4 +159,36 @@ $(function() {
           }
         }
       })
+
+
+
+/*** Timeline Carousel ***/
+$('.desktop-owl.timeline').owlCarousel({
+  loop: false,
+  pagination: true,
+  paginationNumbers: false,
+  nav:true,
+  center:false,
+  dots:false,
+  margin:10,
+  navText: [
+    '<i class="fa-solid fa-arrow-left"></i>',
+    '<i class="fa-solid fa-arrow-right"></i>'
+],
+  responsive:{
+    0:{
+      items:1
+    },
+    600: {
+      items:2
+    },
+    1200:{
+      items:3
+    }
+  }
+});
+
+
+
+
 });
