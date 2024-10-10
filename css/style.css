@@ -1138,7 +1138,225 @@ section.case-study-section {
 .case-study-section {
   overflow: hidden;
 }
+/* Growth-page style */
+section.we-hiring-section {
+  padding: 30px 0;
+  background: #6A055A;
+}
 
+.growth-weare h3 {
+  color: #fff;
+}
+
+.growth-weare-a a {
+  border: 2px solid #fff !important;
+}
+
+/* our team */
+.Team-growth {
+  width: 60%;
+}
+
+.Team-growth-img {
+  width: 40%;
+}
+
+.Team-growth a {
+  padding: 0;
+  color: #720561;
+  font-family: 'Playfair-bold';
+}
+
+.Team-growth a:after {}
+
+/* our value section */
+.our-team-sub {
+  width: 25%;
+}
+
+.our-team-sub p {
+  color: #B6B6B6;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/* Apply now */
+.footer-we-are-section {
+  background: #fff !important;
+}
+
+/* location  */
+.growth-location {
+  padding: 30px;
+}
+
+/* Milestones section   */
+section.Milestones-section {
+  padding: 50px 0;
+  background: linear-gradient(90deg, rgba(63, 25, 57, 1) 0%, rgba(115, 6, 97, 1) 100%) !important;
+}
+
+
+.timeline-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.time-sub-cont {
+  text-align: left;
+}
+
+.timeline-slide .content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.Milestones-section h2 {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-family: 'Playfair-extrabold';
+}
+
+p.mile {
+  text-align: center;
+  font-size: 25px;
+}
+
+/* about */
+
+
+
+
+
+.desktop-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*timeline slider styles*/
+.timeline-slide {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-slide .content:before {
+  height: 30%;
+  width: 30%;
+  position: absolute;
+  z-index: 2000;
+  overflow: visible;
+  background-image: url(../Images/Icon-timeline.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  bottom: 20%;
+  content: '';
+  left: 7%;
+}
+
+.milestone-slide1 .content:before {
+  bottom: -35%;
+}
+
+.milestone-slide2 .content:before {
+  bottom: 115%;
+}
+
+.timeline {
+  position: relative;
+  margin: 0;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.timeline .owl-stage-outer {
+  padding-bottom: 30px;
+  min-height: 400px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  border: 2px solid;
+  width: 92%;
+  top: 45%;
+  text-align: center;
+  left: 2%;
+}
+
+.timeline .owl-stage {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline .timeline-slide .content {
+  text-align: center;
+  color: #fff;
+  height: 150px;
+}
+
+.milestone-slide2 .content {
+  top: 150px;
+  position: absolute;
+}
+
+.time-sub-img img {
+  transition: transform 0.3s ease;
+}
+
+.time-sub-cont {
+  text-align: left;
+  width: 70%;
+}
+
+.time-sub-img {
+  width: 30%;
+}
+
+.timeline .owl-nav button {
+  position: absolute;
+  top: 42%;
+
+}
+
+.timeline .owl-nav button i {
+  border: 2px solid #fff;
+  padding: 7px 8px;
+  border-radius: 100px;
+
+}
+
+.timeline .owl-nav .owl-next {
+  right: 0;
+}
+
+.timeline .owl-nav .owl-prev {
+  left: -3%;
+}
+
+.timeline .owl-nav .disabled {
+  display: none;
+}
 /* Show burger icon on mobile */
 @media screen and (max-width: 1300px) {
   .consistent-cont h2 {
@@ -1227,6 +1445,10 @@ section.case-study-section {
 
   .consistent-image img {
     width: 70%;
+  }
+
+  .timeline-section {
+    display: none;
   }
 }
 
@@ -1358,6 +1580,14 @@ section.case-study-section {
   .pagination {
     transform: translateY(40px);
     justify-content: center;
+  }
+  /* about */
+  .milestone-slide2 .content:before {
+    bottom: 112%;
+  }
+
+  .milestone-slide1 .content:before {
+    bottom: -38%;
   }
 
 }
@@ -1500,6 +1730,16 @@ section.case-study-section {
   .slider-casestudy .img-conent {
     padding: 50px 10px 20px;
     border-radius: 3px 3px 8px 8px;
+  }
+  /* about */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    border: 2px solid;
+    width: 82%;
+    top: 45%;
+    text-align: center;
+    left: 7%;
   }
 }
 
@@ -1647,10 +1887,23 @@ section.case-study-section {
   .counter p {
     font-size: 20px;
   }
+  /* about */
+  .milestone-slide1 .content:before {
+    bottom: -36%;
+  }
+
+  .milestone-slide2 .content:before {
+    bottom: 113%;
+  }
 
 }
 
 @media screen and (max-width: 425px) {
+
+   p.mile {
+    text-align: center;
+    font-size: 19px;
+  }
 
   .banner-content h1 {
     font-size: 30px;
@@ -1733,5 +1986,13 @@ section.case-study-section {
 
   .slide-1 h2 {
     font-size: 21px !important;
+  }
+  /* about */
+  .milestone-slide2 .content:before {
+    bottom: 111%;
+  }
+
+  .milestone-slide1 .content:before {
+    bottom: -38%;
   }
 }
