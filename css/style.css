@@ -715,7 +715,7 @@ section.india-section {
 }
 
 /* we-are-hairing section  */
-.main-div-we-hiring {
+.main-hiring {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -737,7 +737,7 @@ section.we-hiring-section {
   font-family: 'Playfair-regular';
 }
 
-.main-div-we-hiring h3 {
+.main-hiring h3 {
 
   font-size: 50px;
   text-align: center;
@@ -1138,6 +1138,7 @@ section.case-study-section {
 .case-study-section {
   overflow: hidden;
 }
+
 /* Growth-page style */
 section.we-hiring-section {
   padding: 30px 0;
@@ -1357,6 +1358,11 @@ p.mile {
 .timeline .owl-nav .disabled {
   display: none;
 }
+
+.growth-color h3 {
+  color: #000;
+}
+
 /* Show burger icon on mobile */
 @media screen and (max-width: 1300px) {
   .consistent-cont h2 {
@@ -1405,6 +1411,7 @@ p.mile {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .slider-blog .img-conent {
     background: #00000063;
     padding: 20px;
@@ -1414,7 +1421,7 @@ p.mile {
 
 @media screen and (max-width: 1100px) {
 
-  .main-div-we-hiring h3 {
+  .main-hiring h3 {
     font-size: 42px;
   }
 
@@ -1450,6 +1457,11 @@ p.mile {
   .timeline-section {
     display: none;
   }
+
+  /*  */
+  .growth-sec2 {
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width: 1024px) {}
@@ -1479,7 +1491,7 @@ p.mile {
     width: 50%;
   }
 
-  .main-div-we-hiring {
+  .main-hiring {
     display: block;
     text-align: center;
   }
@@ -1581,6 +1593,7 @@ p.mile {
     transform: translateY(40px);
     justify-content: center;
   }
+
   /* about */
   .milestone-slide2 .content:before {
     bottom: 112%;
@@ -1731,6 +1744,7 @@ p.mile {
     padding: 50px 10px 20px;
     border-radius: 3px 3px 8px 8px;
   }
+
   /* about */
   .timeline::before {
     content: '';
@@ -1740,6 +1754,10 @@ p.mile {
     top: 45%;
     text-align: center;
     left: 7%;
+  }
+
+  .banner-content h1 {
+    width: 100%;
   }
 }
 
@@ -1841,7 +1859,7 @@ p.mile {
     width: 100%;
   }
 
-  .main-div-we-hiring h3 {
+  .main-hiring h3 {
     font-size: 25px;
   }
 
@@ -1887,6 +1905,7 @@ p.mile {
   .counter p {
     font-size: 20px;
   }
+
   /* about */
   .milestone-slide1 .content:before {
     bottom: -36%;
@@ -1896,11 +1915,15 @@ p.mile {
     bottom: 113%;
   }
 
+  .main-hiring h3 {
+    font-size: 35px;
+  }
+
 }
 
 @media screen and (max-width: 425px) {
 
-   p.mile {
+  p.mile {
     text-align: center;
     font-size: 19px;
   }
@@ -1915,7 +1938,6 @@ p.mile {
 
   .banner-content span {
     color: #7B7B7B;
-    font-size: 18px;
   }
 
   .service-mobcontent .enquire-btn {
@@ -1952,6 +1974,7 @@ p.mile {
   .location-p p {
     font-size: 15px;
   }
+
   .case-study-conten p {
     font-size: 18px;
   }
@@ -1976,6 +1999,10 @@ p.mile {
     font-size: 30px !important;
     padding: 0;
   }
+
+  .main-hiring h3 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -1987,6 +2014,7 @@ p.mile {
   .slide-1 h2 {
     font-size: 21px !important;
   }
+
   /* about */
   .milestone-slide2 .content:before {
     bottom: 111%;
