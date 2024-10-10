@@ -618,6 +618,10 @@ section.your-trused {
   font-family: 'Playfair-bold';
 }
 
+.slider-pagination {
+  display: none;
+}
+
 .slide-1 .owl-nav.disabled {
   display: none;
 }
