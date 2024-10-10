@@ -61,7 +61,6 @@ p {
   border: 2px solid #6A055A;
   font-size: 25px;
   padding: 5px 25px 7px;
-  border-radius: 3px;
   font-family: 'Playfair-bold';
 }
 
@@ -372,6 +371,10 @@ section.consistent-section {
   color: #000;
 }
 
+.consistent-cont .common-btn a {
+  padding: 3px 30px 5px;
+}
+
 .consistent-cont a {
   padding: 5px 30px 7px;
   font-family: 'Playfair-bold';
@@ -471,6 +474,10 @@ section.counter-section {
   display: block;
 }
 
+.text-section-1 h2 {
+  margin-bottom: 20px;
+}
+
 .content-wrapper {
   display: flex;
   justify-content: space-between;
@@ -561,7 +568,7 @@ section.your-trused {
 .your-trused-sub h3 {
   color: #720561;
   font-size: 25px;
-  font-family: 'Playfair-semibold';
+  font-family: 'Playfair-bold';
 }
 
 .your-trused h2 {
@@ -569,7 +576,7 @@ section.your-trused {
   padding: 20px;
   font-size: 45px;
   font-weight: 600;
-  font-family: 'Playfair-extrabold';
+  font-family: 'Playfair-bold';
 }
 
 /* slider section  */
@@ -579,46 +586,21 @@ section.your-trused {
   display: flex;
   width: 100%;
   height: 100%;
-}
-
-.image-section-1 {
-  flex: 1;
-  display: flex;
-  justify-content: center;
   align-items: center;
-
-}
-
-.image-section-1 img {
-  max-width: 100%;
-  height: auto;
-}
-
-.pagination {
-  transform: translateY(45px);
-  justify-content: center;
 }
 
 .text-section-1 {
-  flex: 1;
-  background-color: #ffffff;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 50%;
   text-align: center;
-
+  margin-top: 5rem;
 }
 
-.slider-1 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform: translateY(100px);
+.image-section-1 {
+  width: 50%;
 }
 
 .slide-1 {
-  display: none;
+  text-align: center;
 }
 
 .slide-1 h2 {
@@ -633,7 +615,11 @@ section.your-trused {
   margin-bottom: 15px;
   color: #800080;
   font-weight: 600;
-  font-family: 'Playfair-semibold';
+  font-family: 'Playfair-bold';
+}
+
+.slide-1 .owl-nav.disabled {
+  display: none;
 }
 
 .slide-1 p {
@@ -643,14 +629,15 @@ section.your-trused {
   font-weight: 500;
 }
 
+.slider-1 .owl-dots .owl-dot.active span {
+  background: #000;
+  color: #000;
+}
+
 span.dot.active {
   background: #000000;
 }
 
-.pagination {
-  margin-top: 20px;
-  text-align: center;
-}
 
 .dot {
   height: 10px;
@@ -932,9 +919,6 @@ section.case-study-section {
   font-size: 20px;
 }
 
-.slider-pagination {
-  display: none;
-}
 
 .slider-casestudy button:hover {
   background: transparent !important;
@@ -1062,10 +1046,6 @@ section.case-study-section {
 
 .slider-blog .img-conent p {
   font-size: 20px;
-}
-
-.slider-pagination {
-  display: none;
 }
 
 .slider-blog button:hover {
@@ -1420,11 +1400,6 @@ p.mile {
     font-size: 25px;
   }
 
-  .pagination {
-    transform: translateY(75px);
-    justify-content: center;
-  }
-
   .your-trused-sub {
     width: 30%;
     text-align: center;
@@ -1447,10 +1422,6 @@ p.mile {
 
   .main-hiring h3 {
     font-size: 42px;
-  }
-
-  .slider-1 {
-    transform: translateY(50px);
   }
 
   .india-cont {
@@ -1525,6 +1496,10 @@ p.mile {
   }
 
   .A-we-are {
+    width: 100%;
+  }
+
+  .slider-main-div-1>div {
     width: 100%;
   }
 
@@ -1610,11 +1585,6 @@ p.mile {
   .slider-main-div-1 {
     display: block;
     height: auto;
-  }
-
-  .pagination {
-    transform: translateY(40px);
-    justify-content: center;
   }
 
   /* about */
@@ -1726,11 +1696,6 @@ p.mile {
     font-size: 22px !important;
   }
 
-  .image-section-1 {
-    justify-content: center;
-    padding: 20px;
-  }
-
   .image-section-1 img {
     max-width: 100%;
   }
@@ -1739,9 +1704,6 @@ p.mile {
     padding: 20px;
   }
 
-  .pagination {
-    margin-bottom: 20px;
-  }
 
   .location-p p {
     font-size: 28px;
@@ -1869,13 +1831,6 @@ p.mile {
     margin-bottom: 30px;
   }
 
-  .slider-1 {
-    transform: translateY(0px);
-  }
-
-  .pagination {
-    transform: translateY(0px);
-  }
 
   .counter {
     width: 100%;
@@ -1890,7 +1845,7 @@ p.mile {
   }
 
   .text-section-1 {
-    padding: 0 30px;
+    padding: 0;
     margin-top: 4rem;
   }
 
@@ -1980,19 +1935,6 @@ p.mile {
 
   .text-content li {
     font-size: 25px;
-  }
-
-  .image-section-1 {
-    padding: 0px;
-  }
-
-  .pagination {
-    margin-bottom: 10px;
-  }
-
-  .text-section-1 {
-    padding: 0;
-    margin-top: 4rem;
   }
 
   .your-trused-sub {
