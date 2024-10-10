@@ -405,7 +405,7 @@ section.counter-section {
 }
 
 .counter .plus {
-  font-size: 36px;
+  font-size: 50px;
   color: lightgray;
   margin-left: 4px;
 }
@@ -673,7 +673,7 @@ section.Our-framework {
 }
 
 section.Industries-section {
-  padding: 50px 0;
+  padding: 30px 0;
   background: linear-gradient(90deg, rgba(63, 25, 57, 1) 0%, rgba(115, 6, 97, 1) 100%) !important;
 }
 
@@ -1193,7 +1193,7 @@ section.we-hiring-section {
 
 /* Milestones section   */
 section.Milestones-section {
-  padding: 50px 0;
+  padding: 50px 0 0;
   background: linear-gradient(90deg, rgba(63, 25, 57, 1) 0%, rgba(115, 6, 97, 1) 100%) !important;
 }
 
@@ -1381,6 +1381,10 @@ p.mile {
 
 .read-more {
   margin-bottom: 0 !important;
+}
+
+.ifm-banner h1 {
+  width: 70%;
 }
 
 /* Show burger icon on mobile */
@@ -1934,6 +1938,11 @@ p.mile {
 
   .main-hiring h3 {
     font-size: 35px;
+  }
+
+  /* patner */
+  .ifm-banner h1 {
+    width: 100%;
   }
 
 }
