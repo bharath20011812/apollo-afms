@@ -1,36 +1,3 @@
-
-let currentSlide = 1;
-showSlide(currentSlide);
-
-function showSlide(n) {
-    let slides = document.getElementsByClassName("slide-1");
-    let dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) {
-        currentSlide = 1;
-    } else if (n < 1) {
-        currentSlide = slides.length;
-    } else {
-        currentSlide = n;
-    }
-
-    // Hide all slides
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    // Remove the active class from all dots
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    // Show the current slide and set the active dot
-    slides[currentSlide - 1].style.display = "block";
-    dots[currentSlide - 1].className += " active";
-}
-
-
-
 document.querySelector('.subscribe-button').addEventListener('click', function () {
     alert('Subscribed successfully!');
 });
@@ -189,7 +156,16 @@ $('.desktop-owl.timeline').owlCarousel({
 });
 
 
-
+$('.slider-1').owlCarousel({
+  loop: true,
+  margin: 10,
+  items:1,
+  nav: false,
+  autoplay: false,
+  dots: true,
+  navText:false,
+  
+})
 
 });
 
