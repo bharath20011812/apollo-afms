@@ -161,7 +161,7 @@ $('.slider-1').owlCarousel({
   margin: 10,
   items:1,
   nav: false,
-  autoplay: false,
+  autoplay: true,
   dots: true,
   navText:false,
   
