@@ -192,3 +192,14 @@ $('.desktop-owl.timeline').owlCarousel({
 
 
 });
+
+
+
+$('.moreless-button').click(function() {
+  $('.moretext').slideToggle();
+  if ($('.moreless-button').text() == "Read less") {
+    $(this).text("Read more")
+  } else {
+    $(this).text("Read less")
+  }
+});
