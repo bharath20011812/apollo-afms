@@ -3,6 +3,10 @@
   font-family: 'Playfair-bold';
 }
 
+@font-face {
+  src: url('../fonts/Roboto-Bold.ttf');
+  font-family: 'Roboto-Bold';
+}
 
 @font-face {
   src: url('../fonts/PlayfairDisplay-Regular.ttf');
@@ -171,7 +175,7 @@ nav .links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 30px
+  gap: 20px
 }
 
 nav .links li {
@@ -209,8 +213,8 @@ nav .links a:not(:has(img)):hover::before {
 }
 
 nav .links a img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 /* Mobile specific styles */
@@ -344,6 +348,8 @@ section.consistent-section {
   gap: 20px;
   padding-top: 30px;
   align-items: center;
+  width: 90%;
+  margin: auto;
 }
 
 .consistent-image {
@@ -477,13 +483,12 @@ section.counter-section {
 }
 
 .text-section-1 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .content-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
   margin-top: 20px;
 }
 
@@ -625,6 +630,12 @@ section.your-trused {
   font-family: 'Playfair-bold';
 }
 
+.slide-1 h5 {
+  color: #000;
+  font-weight: 600;
+  font-family: 'Playfair-bold';
+}
+
 .slide-1 h3 {
   font-size: 25px;
   margin-bottom: 15px;
@@ -669,7 +680,7 @@ span.dot.active {
 }
 
 section.Our-framework {
-  padding: 0 0 50px;
+  padding: 30px 0 50px;
 }
 
 /* Industries section start */
@@ -770,6 +781,7 @@ footer {
   flex: 1;
   margin: 10px;
   min-width: 200px;
+  text-align: center;
 }
 
 .footer-column h3 {
@@ -800,6 +812,10 @@ footer {
 
 .social-icons {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
 }
 
 .footer-column ul li a:hover {
@@ -817,7 +833,7 @@ footer {
 
 .subscribe-button {
   margin-top: 20px;
-  padding: 2px 30px;
+  padding: 5px 30px 8px;
   background-color: white;
   color: black;
   border: none;
@@ -825,7 +841,6 @@ footer {
   cursor: pointer !important;
   transition: background-color 0.3s;
   font-size: 23px;
-  transform: translateX(135px);
   font-weight: 800;
 }
 
@@ -833,11 +848,31 @@ footer {
   background-color: #ddd;
 }
 
+.social-icons i.fa-brands.fa-linkedin-in {
+  color: #000;
+  background: #fff;
+  padding: 10px 7px 0 10px;
+  font-size: 35px;
+  border-radius: 8px;
+}
+
 .location-p p {
   font-size: 30px;
   color: #6A055A;
   text-align: center;
   font-family: 'Playfair-semibold';
+}
+
+.social-icons i.fa-brands.fa-instagram {
+  font-size: 50px;
+  color: #fff;
+}
+.social-icons i.fa-solid.fa-envelope {
+  font-size: 30px;
+  color: #710860;
+  background: #fff;
+  padding: 10px;
+  border-radius: 100px;
 }
 
 /* case study */
@@ -1439,7 +1474,7 @@ button.tab-button.active.Services-tabbtn {
 .Services-inrcont li {
   color: #000;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-family: 'Playfair-semibold';
 }
 
@@ -1484,7 +1519,7 @@ button.tab-button.active.Services-tabbtn {
 }
 
 .soft-h1-banner h1 {
-  width: 84%;
+  width: 100%;
 }
 
 /* techinal page */
@@ -1558,6 +1593,7 @@ section.Blog-listing-section {
 .main-blog-div {
   display: flex;
   gap: 50px;
+  margin-bottom: 50px;
 }
 
 button.blog-btn {
@@ -1571,6 +1607,18 @@ button.blog-btn {
 
 .blog-cont-div h2 {
   font-weight: 700;
+  font-family: 'Roboto-Bold';
+}
+
+.blog-cont-div p {
+  font-family: 'Roboto-Bold';
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  position: relative;
+  z-index: 99;
 }
 
 .blog-cont-div {
@@ -1618,20 +1666,18 @@ section.enq-btns {
   font-size: 35px;
 }
 
-.service-tabslider .owl-nav button {
-  position: absolute;
-  top: 25%;
-}
 
 .service-tabslider .owl-nav button:hover {
   background: transparent !important;
 }
 
 .service-tabslider .owl-nav .owl-prev {
+  position: absolute;
   left: -5%;
 }
 
 .service-tabslider .owl-nav .owl-next {
+  position: absolute;
   right: -3%;
 }
 
@@ -1639,15 +1685,107 @@ section.enq-btns {
   display: none;
 }
 
-.techtab-slider button.tab-button.Services-tabbtn {
-  height: 160px;
+.service-tabslider .owl-nav button {
+  top: 4%;
 }
+
 .techtab-slider .owl-nav button {
-  position: absolute;
   top: 35%;
 }
-.soft-sertab button.tab-button.Services-tabbtn {
+
+.soft-sertab .owl-nav button {
+  top: 20%;
+}
+
+.soft-sertab .Services-tabbtn {
   height: 65px;
+}
+
+.techtab-slider .Services-tabbtn {
+  height: 160px;
+}
+
+.audit-sertab .Services-tabbtn {
+  height: 80px;
+}
+
+.ifms-banner h1 span {
+  color: #720561;
+}
+
+.duct-leack p {
+  color: #fff;
+}
+
+.seal-cerificate {
+  display: flex;
+  width: 6%;
+  gap: 10px;
+}
+
+.seal-duct .seal-crucial {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+section.seal-duct {
+  padding: 50px 0 0;
+}
+
+section.seal-duct h2 {
+  padding: 20px 0;
+  font-size: 45px;
+}
+
+section.sealing-section {
+  background: linear-gradient(91.29deg, #3E1A38 2.43%, #6A1A5D 46.42%, #720561 90.4%);
+  padding: 50px 0;
+  color: #ffff;
+  text-align: center;
+}
+
+.sealing-tabel table {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.sealing-tabel table th,
+.sealing-tabel table td {
+  background: #fff;
+  border: 5px solid #710861;
+  color: #710861;
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Playfair-extrabold';
+  font-weight: 700;
+}
+
+.sealing-tabel table td i.fa-solid.fa-check {
+  background: #6A1A5D;
+  color: #fff;
+  padding: 10px 11px;
+  border-radius: 100px;
+}
+
+.sealing-tabel table td i.fa-solid.fa-xmark {
+  background: #6A1A5D;
+  color: #fff;
+  padding: 10px 13px;
+  border-radius: 100px;
+}
+
+.slider-1 li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.blog-cont-div .read-more a {
+  font-size: 25px;
+}
+
+.blog-cont-div .read-more i {
+  font-size: 20px;
 }
 
 /* Show burger icon on mobile */
@@ -1914,6 +2052,10 @@ section.enq-btns {
     width: 48%;
   }
 
+  .seal-duct .seal-crucial {
+    flex-wrap: wrap;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -2079,6 +2221,13 @@ section.enq-btns {
   section.Apollo-tech-platf {
     margin-bottom: 0px;
   }
+
+  .sealing-tabel table td i.fa-solid.fa-xmark {
+    background: #6A1A5D;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 100px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -2185,7 +2334,7 @@ section.enq-btns {
   }
 
   .services {
-    padding: 50px 15px;
+    padding: 50px 0px;
   }
 
   .service-mobinner {
@@ -2242,6 +2391,18 @@ section.enq-btns {
   .career-focus .our-team-sub {
     width: 100%;
   }
+
+  .seal-cerificate {
+    display: flex;
+    width: 20%;
+    gap: 10px;
+  }
+
+  .sealing-tabel table th,
+  .sealing-tabel table td,
+  .sealing-tabel table td i {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -2296,6 +2457,7 @@ section.enq-btns {
   .blog-cont-div p {
     font-size: 18px;
   }
+
 }
 
 
@@ -2316,6 +2478,12 @@ section.enq-btns {
 
   .main-hiring h3 {
     font-size: 30px;
+  }
+
+  .sealing-tabel table th,
+  .sealing-tabel table td,
+  .sealing-tabel table td i {
+    font-size: 10px;
   }
 }
 
@@ -2338,3 +2506,4 @@ section.enq-btns {
     bottom: -38%;
   }
 }
+
