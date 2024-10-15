@@ -424,7 +424,7 @@ section.counter-section {
 /* tab section */
 .services {
   text-align: center;
-  padding: 30px;
+  padding: 50px 0;
   background: linear-gradient(91.29deg, #3E1A38 2.43%, #6A1A5D 46.42%, #720561 90.4%);
   color: white;
 }
@@ -460,10 +460,11 @@ section.counter-section {
   font-size: 20px;
   transition: 0.3s ease;
   font-family: 'Playfair-bold';
+  width: 25%;
 }
 
 .text-content li {
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .tab-panel {
@@ -492,6 +493,14 @@ section.counter-section {
   text-align: left;
   display: flex;
   flex-wrap: wrap;
+}
+
+.content-wrapper .text-content p {
+  font-size: 20px;
+}
+
+.content-wrapper .Services-inrcont {
+  color: #000;
 }
 
 .service-mobcontent .enquire-btn {
@@ -557,6 +566,11 @@ section.your-trused {
   width: 20%;
   text-align: center;
   margin-top: 30px;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.your-trused-sub:hover {
+  transform: scale(1.06);
 }
 
 .your-trused-sub img {
@@ -664,7 +678,6 @@ section.Our-framework {
 }
 
 section.Industries-section {
-  padding: 30px 0;
   background: linear-gradient(90deg, rgba(63, 25, 57, 1) 0%, rgba(115, 6, 97, 1) 100%) !important;
 }
 
@@ -899,7 +912,7 @@ section.case-study-section {
 }
 
 .slide-case:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
   border-radius: 8px;
 }
 
@@ -1354,7 +1367,7 @@ p.mile {
 
 .moreless-button {
   color: #6A055A !important;
-  font-size: 18px;
+  font-size: 20px;
   padding: 0 !important;
 }
 
@@ -1369,6 +1382,235 @@ p.mile {
 
 .ifm-banner h1 {
   width: 70%;
+}
+
+/* IFM-Page */
+.ifm-cont {
+  width: 60%;
+}
+
+.ifm-img {
+  width: 40%;
+}
+
+.ifm-cont a {
+  padding: 0;
+  color: #720561;
+}
+
+.ifm-cont a:after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f101";
+  font-weight: 900;
+  margin-left: 5px;
+}
+
+.ifm-cont p {
+  width: 85%;
+}
+
+/* soft-service */
+.soft-service-framework {
+  display: none;
+}
+
+.Our-Competitive {
+  background: linear-gradient(91.29deg, #3E1A38 2.43%, #6A1A5D 46.42%, #720561 90.4%);
+}
+
+.Our-Competitive-sub h3 {
+  color: #fff;
+}
+
+.soft-ser {
+  background: #fff;
+}
+
+.Our-Competitive h2 {
+  color: #fff;
+}
+
+button.tab-button.Our-Services-soft-btn {
+  color: #000;
+  background: #EFEAEE;
+  border: none;
+}
+
+button.tab-button.active.Our-Services-soft-btn {
+  color: #fff;
+}
+
+.Services-inrcont li {
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: 'Playfair-semibold';
+}
+
+.soft-cont-enq a {
+  display: inline-block;
+  color: #fff;
+  background: #6A055A;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid #fff;
+  font-size: 25px;
+  padding: 5px 25px 7px;
+  border-radius: 3px;
+}
+
+.soft-cont-enq a:hover {
+  color: #6A055A;
+  background: #fff;
+}
+
+.case-study-soft p.conrt {
+  font-size: 25px;
+}
+
+.blog-study-soft p.conrt {
+  font-size: 25px;
+}
+
+.soft-ser h2 {
+  color: #000;
+}
+
+.soft-service .text-content {
+  border: 2px solid #000;
+}
+
+.soft-service .text-content li,
+.soft-service .text-content p {
+  color: #000;
+}
+
+.soft-h1-banner h1 {
+  width: 84%;
+}
+
+/* techinal page */
+button.readmore__toggle {
+  border: none;
+  background: none;
+  color: #720561;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* micro-page */
+
+/* Apollo tech platform-page */
+.Apollo-tech img {
+  width: 60%;
+}
+
+button.tab-button.active.apollo-tech-pla {
+  padding: 0;
+}
+
+button.tab-button.apollo-tech-pla {
+  padding: 15px;
+}
+
+.All-one-palt img {
+  width: 50%;
+}
+
+.Apollo-tech-p {
+  transform: translateY(-100px);
+}
+
+section.Apollo-tech-platf {
+  margin-bottom: 50px;
+}
+
+.Sustainability-sec {
+  width: 60%;
+}
+
+.Why-Sustainable h3 {
+  margin-bottom: 30px;
+}
+
+.Why-Sustainable p {
+  color: #B2B2B2;
+}
+
+.Why-Sustainable-cont {
+  max-width: 1450px;
+}
+
+h1.Banner-2 {
+  display: none;
+}
+
+section.Blog-listing-section {
+  padding: 50px;
+}
+
+.blog-img-div {
+  width: 50%;
+}
+
+.blog-cont-div {
+  width: 50%;
+}
+
+.main-blog-div {
+  display: flex;
+  gap: 50px;
+}
+
+button.blog-btn {
+  font-size: 25px;
+  padding: 0;
+}
+
+.blog-cont-div h2:hover {
+  color: #720561;
+}
+
+.blog-cont-div h2 {
+  font-weight: 700;
+}
+
+.blog-cont-div {
+  margin-bottom: 50px;
+}
+
+section.enq-btns {
+  padding: 50px;
+}
+
+.enq-div-btn.mt-3.common-btn {
+  text-align: center;
+}
+
+.blog-listing-con {
+  max-width: 1400px;
+}
+
+/* career */
+
+.career-focus p {
+  color: #fff;
+}
+
+.career-focus img {
+  width: 150px;
+  height: 150px;
+}
+
+.your-trused.career-focus {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.career-focus .our-team-sub {
+  width: 23%;
 }
 
 /* Show burger icon on mobile */
@@ -1420,6 +1662,10 @@ p.mile {
     padding: 20px;
     text-align: left;
   }
+
+  .tab-button {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1443,6 +1689,7 @@ p.mile {
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
 
   .consistent-main-div>div {
@@ -1457,9 +1704,9 @@ p.mile {
     display: none;
   }
 
-  /*  */
+  /* about */
   .growth-sec2 {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 
@@ -1505,6 +1752,7 @@ p.mile {
 
   .slider-main-div-1>div {
     width: 100%;
+    text-align: center;
   }
 
   .subscribe-button {
@@ -1598,6 +1846,35 @@ p.mile {
 
   .milestone-slide1 .content:before {
     bottom: -38%;
+  }
+
+  /* ifm */
+  .blog-img-div {
+    margin-bottom: 50px;
+  }
+
+  .blog-img-div img {
+    height: auto;
+  }
+
+  .main-blog-div {
+    display: block;
+  }
+
+  .blog-img-div {
+    width: 100%;
+  }
+
+  .blog-cont-div {
+    width: 100%;
+  }
+
+  .Apollo-tech-p {
+    transform: translateY(0px);
+  }
+
+  .career-focus .our-team-sub {
+    width: 48%;
   }
 
 }
@@ -1726,7 +2003,7 @@ p.mile {
   }
 
   section.Our-framework {
-    padding: 0 0 30px;
+    padding: 30px 0;
   }
 
   .slider-casestudy .img-conent {
@@ -1747,6 +2024,23 @@ p.mile {
 
   .banner-content h1 {
     width: 100%;
+  }
+
+  /* ifm */
+  h1.Banner-1 {
+    display: none;
+  }
+
+  h1.Banner-2 {
+    display: block;
+  }
+
+  .ifm-cont h2 {
+    font-size: 42px;
+  }
+
+  section.Apollo-tech-platf {
+    margin-bottom: 0px;
   }
 }
 
@@ -1850,15 +2144,11 @@ p.mile {
 
   .text-section-1 {
     padding: 0;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .services {
-    padding: 30px 15px;
-  }
-
-  .service-mobcontent .text-content {
-    padding: 20px;
+    padding: 50px 15px;
   }
 
   .service-mobinner {
@@ -1879,7 +2169,7 @@ p.mile {
   }
 
   .consistent-cont {
-    padding: 23px;
+    padding: 20px;
   }
 
   .counter p {
@@ -1904,6 +2194,17 @@ p.mile {
     width: 100%;
   }
 
+  .soft-service .text-content {
+    padding: 10px;
+  }
+
+  .career-focus .our-team-sub img {
+    width: 40%;
+  }
+
+  .career-focus .our-team-sub {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -1937,10 +2238,6 @@ p.mile {
     padding: 5px;
   }
 
-  .text-content li {
-    font-size: 25px;
-  }
-
   .your-trused-sub {
     width: 100%;
     padding: 0 20px;
@@ -1953,6 +2250,15 @@ p.mile {
   .case-study-conten p {
     font-size: 18px;
   }
+
+
+  button.blog-btn {
+    font-size: 20px;
+  }
+
+  .blog-cont-div p {
+    font-size: 18px;
+  }
 }
 
 
@@ -1960,10 +2266,6 @@ p.mile {
 
   section.consistent-section {
     padding: 30px 0;
-  }
-
-  .text-content li {
-    font-size: 22px;
   }
 
   .consistent-cont {
