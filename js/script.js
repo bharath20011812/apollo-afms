@@ -161,7 +161,7 @@ $(function () {
     margin: 10,
     items: 1,
     nav: false,
-    autoplay: true,
+    autoplay: false,
     dots: true,
     navText: false,
 
@@ -175,6 +175,7 @@ $(function () {
     nav: true,
     autoplay: false,
     dots: false,
+    autoplayHoverPause:false,
     navText: [
       '<i class="fa-solid fa-angle-left"></i>',
       '<i class="fa-solid fa-angle-right"></i>'
@@ -206,5 +207,3 @@ $('.moreless-button').click(function () {
     $(this).text("Read less")
   }
 });
-
-
