@@ -490,6 +490,7 @@ section.counter-section {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  gap: 20px
 }
 
 .content-wrapper .text-content {
@@ -499,6 +500,10 @@ section.counter-section {
   text-align: left;
   display: flex;
   flex-wrap: wrap;
+}
+
+.Our-Services-soft .content-wrapper {
+  gap: 0;
 }
 
 .content-wrapper .text-content p {
@@ -867,6 +872,7 @@ footer {
   font-size: 50px;
   color: #fff;
 }
+
 .social-icons i.fa-solid.fa-envelope {
   font-size: 30px;
   color: #710860;
@@ -2506,4 +2512,3 @@ section.sealing-section {
     bottom: -38%;
   }
 }
-
