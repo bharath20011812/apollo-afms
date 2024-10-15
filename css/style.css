@@ -464,7 +464,8 @@ section.counter-section {
 }
 
 .text-content li {
-  font-size: 22px;
+  font-size: 20px;
+  font-family: 'Playfair-semibold';
 }
 
 .tab-panel {
@@ -1409,11 +1410,6 @@ p.mile {
   width: 85%;
 }
 
-/* soft-service */
-.soft-service-framework {
-  display: none;
-}
-
 .Our-Competitive {
   background: linear-gradient(91.29deg, #3E1A38 2.43%, #6A1A5D 46.42%, #720561 90.4%);
 }
@@ -1430,13 +1426,13 @@ p.mile {
   color: #fff;
 }
 
-button.tab-button.Our-Services-soft-btn {
+button.tab-button.Services-tabbtn {
   color: #000;
   background: #EFEAEE;
   border: none;
 }
 
-button.tab-button.active.Our-Services-soft-btn {
+button.tab-button.active.Services-tabbtn {
   color: #fff;
 }
 
@@ -1611,6 +1607,47 @@ section.enq-btns {
 
 .career-focus .our-team-sub {
   width: 23%;
+}
+
+.Services-tabbtn {
+  width: 100%;
+}
+
+.service-tabslider i {
+  color: #BABABA;
+  font-size: 35px;
+}
+
+.service-tabslider .owl-nav button {
+  position: absolute;
+  top: 25%;
+}
+
+.service-tabslider .owl-nav button:hover {
+  background: transparent !important;
+}
+
+.service-tabslider .owl-nav .owl-prev {
+  left: -5%;
+}
+
+.service-tabslider .owl-nav .owl-next {
+  right: -3%;
+}
+
+.service-tabslider .owl-nav .disabled {
+  display: none;
+}
+
+.techtab-slider button.tab-button.Services-tabbtn {
+  height: 160px;
+}
+.techtab-slider .owl-nav button {
+  position: absolute;
+  top: 35%;
+}
+.soft-sertab button.tab-button.Services-tabbtn {
+  height: 65px;
 }
 
 /* Show burger icon on mobile */
