@@ -1847,13 +1847,17 @@ section.contact-banner {
 
 .banner-image.contact-map img {
   transform: rotate(45deg);
-  width: 65%;
+  width: 45%;
 }
 
 .banner-image.contact-map {
   text-align: center;
+  width: 50%;
 }
 
+.contact-banner .banner-content {
+  width: 50%;
+}
 /* Show burger icon on mobile */
 @media screen and (max-width: 1300px) {
   .consistent-cont h2 {
