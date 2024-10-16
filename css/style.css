@@ -1845,6 +1845,15 @@ section.contact-banner {
   font-size: 30px;
 }
 
+.banner-image.contact-map img {
+  transform: rotate(45deg);
+  width: 65%;
+}
+
+.banner-image.contact-map {
+  text-align: center;
+}
+
 /* Show burger icon on mobile */
 @media screen and (max-width: 1300px) {
   .consistent-cont h2 {
