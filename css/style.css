@@ -353,12 +353,12 @@ section.consistent-section {
 }
 
 .consistent-image {
-  width: 35%;
+  width: 40%;
   text-align: center;
 }
 
 .consistent-cont {
-  width: 65%;
+  width: 60%;
   padding: 30px;
 }
 
@@ -425,6 +425,18 @@ section.counter-section {
   color: #800080;
   /* Purple color */
   font-weight: 700;
+}
+
+.india-cont .states {
+  color: #6A055A;
+}
+
+.india-cont .states:hover {
+  color: #000;
+}
+
+.india-cont h3:hover {
+  color: #6A055A;
 }
 
 /* tab section */
@@ -1794,6 +1806,45 @@ section.sealing-section {
   font-size: 20px;
 }
 
+/* contact page */
+.social-contact .call-contact {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.social-contact i {
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  border-radius: 100px;
+  font-size: 20px;
+}
+
+.contact-calldetail a {
+  color: #000;
+  font-size: 25px;
+}
+
+.contact-calldetail span {
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
+}
+
+section.contact-banner {
+  padding: 50px;
+}
+
+.contact-otherlocation .text-content {
+  display: block;
+}
+
+.career-hiring .A-we-are p a {
+  font-size: 30px;
+}
+
 /* Show burger icon on mobile */
 @media screen and (max-width: 1300px) {
   .consistent-cont h2 {
@@ -2511,4 +2562,54 @@ section.sealing-section {
   .milestone-slide1 .content:before {
     bottom: -38%;
   }
+}
+
+
+
+
+
+
+
+
+
+.anm_mod {
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+  transition: all 1s ease;
+  text-shadow: 1px 1px 1px rgba(15, 15, 15, 0.5);
+  overflow: hidden;
+
+  &.full {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  &.left {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  &.right {
+    transform: translate3d(8%, 0, 0);
+  }
+
+  &.top {
+    transform: translate3d(0, 100%, 0);
+  }
+
+  &.bottom {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  &.delay {
+    transition: all 2s ease;
+  }
+
+  &.fast {
+    transition: all 0.8 ease;
+  }
+}
+
+.anm_mod.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
