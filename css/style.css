@@ -156,7 +156,7 @@ nav {
   font-family: Inter;
   height: 100px;
   background-color: #fff;
-  padding: 20px 5% 20px 3%;
+  padding: 20px 5% 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -245,7 +245,7 @@ nav .icon-burger .line {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 0 50px;
+  padding: 0 6%;
   background-color: #ffffff;
   padding-right: 0;
 }
@@ -255,7 +255,7 @@ nav .icon-burger .line {
 }
 
 .banner-content {
-  width: 60%;
+  width: 50%;
 }
 
 
@@ -264,7 +264,7 @@ nav .icon-burger .line {
   margin-bottom: 20px;
   font-weight: 700;
   font-family: 'Playfair-extrabold';
-  width: 90%;
+  width: 100%;
 
 }
 
@@ -280,7 +280,7 @@ nav .icon-burger .line {
 /* Banner Image */
 .banner-image {
   text-align: right;
-  width: 40%;
+  width: 50%;
 }
 
 .banner-image img {
@@ -364,7 +364,7 @@ section.consistent-section {
 
 .consistent-cont h2 {
   width: 100%;
-  font-size: 45px;
+  font-size: 50px;
   margin-bottom: 30px;
   font-weight: 900;
   font-family: 'Playfair-extrabold';
@@ -414,8 +414,8 @@ section.counter-section {
 }
 
 .counter .plus {
-  font-size: 50px;
-  color: lightgray;
+  font-size: 60px;
+  color: #B3B3B3;
   margin-left: 4px;
 }
 
@@ -452,7 +452,7 @@ section.counter-section {
 }
 
 .services h2 {
-  font-size: 45px;
+  font-size: 50px;
   margin-bottom: 20px;
   font-weight: 700;
   margin-bottom: 30px;
@@ -507,7 +507,7 @@ section.counter-section {
 
 .content-wrapper .text-content {
   flex: 1;
-  padding: 30px;
+  padding: 50px;
   border: 2px solid white;
   text-align: left;
   display: flex;
@@ -611,7 +611,7 @@ section.your-trused {
 .your-trused h2 {
   text-align: center;
   padding: 20px;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 600;
   font-family: 'Playfair-bold';
 }
@@ -638,6 +638,10 @@ section.your-trused {
 
 .slide-1 {
   text-align: center;
+}
+
+.slider-1 .owl-nav {
+  display: none;
 }
 
 .slide-1 h2 {
@@ -717,6 +721,7 @@ section.Industries-section {
 .Industries-sub h3 {
   color: #fff;
   font-size: 24px;
+  height: 50px;
 }
 
 /* location section start */
@@ -737,14 +742,17 @@ section.india-section {
   font-weight: 700;
   font-size: 50px;
   font-family: 'Playfair-bold';
+  color: black;
+  transition: color 0.3s ease;
 
 }
 
 
 .india-cont {
   width: 50%;
-  transform: translateY(20%);
+  transform: translateY(60%);
   padding-left: 50px;
+  height: 300px;
 }
 
 /* we-are-hairing section  */
@@ -917,7 +925,7 @@ section.case-study-section {
 }
 
 .case-study-conten h2 {
-  font-size: 45px;
+  font-size: 50px;
   margin-bottom: 20px;
   color: #fff;
   font-family: 'Playfair-extrabold';
@@ -1063,7 +1071,7 @@ section.case-study-section {
 }
 
 .blog-study-conten h2 {
-  font-size: 45px;
+  font-size: 50px;
   margin-bottom: 20px;
   font-family: 'Playfair-extrabold';
   text-transform: capitalize;
@@ -1858,6 +1866,7 @@ section.contact-banner {
 .contact-banner .banner-content {
   width: 50%;
 }
+
 /* Show burger icon on mobile */
 @media screen and (max-width: 1300px) {
   .consistent-cont h2 {
@@ -1876,6 +1885,11 @@ section.contact-banner {
 @media screen and (max-width: 1200px) {
   .consistent-cont h2 {
     width: 100%;
+  }
+
+
+  .banner-content h1 {
+    font-size: 40px;
   }
 
   .consistent-main-div {
@@ -1921,13 +1935,14 @@ section.contact-banner {
 
   .india-cont {
     width: 50%;
-    transform: unset;
+    transform: translateY(20%);
     padding-left: 0px;
   }
 
   .india-main {
     display: flex;
     align-items: center;
+    padding: 0;
   }
 
   .consistent-main-div {
@@ -2002,10 +2017,6 @@ section.contact-banner {
 
   .subscribe-button {
     transform: translateX(0px);
-  }
-
-  .banner-content h1 {
-    font-size: 40px;
   }
 
   .banner-content p {
@@ -2271,10 +2282,6 @@ section.contact-banner {
     left: 7%;
   }
 
-  .banner-content h1 {
-    width: 100%;
-  }
-
   /* ifm */
   h1.Banner-1 {
     display: none;
@@ -2363,6 +2370,8 @@ section.contact-banner {
     width: 100%;
     margin-bottom: 30px;
     padding: 0 30px;
+    height: auto;
+    transform: unset;
   }
 
   .india-cont h3 {
@@ -2372,6 +2381,7 @@ section.contact-banner {
   .Industries-sub h3 {
     color: #fff;
     font-size: 20px;
+    height: auto;
   }
 
   .india-main {
@@ -2421,7 +2431,7 @@ section.contact-banner {
   }
 
   .consistent-cont h2 {
-    font-size: 30px !important;
+    font-size: 28px !important;
   }
 
   .consistent-cont {
@@ -2575,6 +2585,10 @@ section.contact-banner {
   .milestone-slide1 .content:before {
     bottom: -38%;
   }
+
+  .consistent-cont h2 {
+    font-size: 25px !important;
+  }
 }
 
 
@@ -2588,13 +2602,12 @@ section.contact-banner {
 .anm_mod {
   opacity: 0;
   transform: translate3d(0, 100%, 0);
-  transition: all 1s ease;
+  transition: all 1.5s ease;
   text-shadow: 1px 1px 1px rgba(15, 15, 15, 0.5);
   overflow: hidden;
 
   &.full {
     width: 100%;
-    font-size: 3rem;
   }
 
   &.left {
@@ -2625,4 +2638,16 @@ section.contact-banner {
 .anm_mod.active {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+.states {
+  animation-delay: 0.5s;
+}
+
+.offerings {
+  animation-delay: 3s;
+}
+
+.service {
+  animation-delay: 5.5s;
 }
